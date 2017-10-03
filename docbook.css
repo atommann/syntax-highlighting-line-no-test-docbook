@@ -296,7 +296,16 @@ pre.programlisting {
 	overflow: auto;
 	font-family: monospace;
 	padding: 1ex;
+/*
+ * the default
 	background-color: #eee;
+*/
+/*
+ * vim
+	background-color: #6c6c6c;
+*/
+
+	background-color: #ffffee;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 }

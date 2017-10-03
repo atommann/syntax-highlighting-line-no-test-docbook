@@ -26,6 +26,9 @@ saxon9:
 xalan:
 	java -classpath /usr/share/java/xalan-j2.jar:/usr/share/java/xerces-j2.jar:/usr/share/java/xalan-j2-serializer.jar:/usr/share/java/xml-commons-apis.jar:/home/atommann/docbook/xslthl-2.1.3/xslthl-2.1.3.jar -Dxslthl.config="file:////usr/share/sgml/docbook/xsl-stylesheets/highlighting/xslthl-config.xml" org.apache.xalan.xslt.Process -OUT output.html -IN c-warm-up-with-arduino-leds.xml -XSL config.xsl
 
+copyback:
+	cp ./docbook-xsl-1.79.1/highlighting/arduino-hl.xml ~/docbook/docbook-xsl-1.79.1/highlighting/arduino-hl.xml
+	cp ./docbook-xsl-1.79.1/html/highlight-arduino.xsl  ~/docbook/docbook-xsl-1.79.1/html/highlight-arduino.xsl 
 
 # Notes
 #

@@ -33,7 +33,7 @@ int main(void)
 
 <para>配色有些问题，比如注释的颜色偏暗，看不清楚。可以自己修改 xslthl.</para>
 
-<programlisting linenumbering="numbered" startinglinenumber="1" language="c"><?dbhtml linenumbering.everyNth="1" linenumbering.separator=" " linenumbering.width="4"?><?dbfo linenumbering.everyNth="1" linenumbering.separator=" " linenumbering.width="4"?><textobject><textdata fileref="blink.ino" encoding="UTF-8" /></textobject></programlisting>
+<programlisting linenumbering="numbered" startinglinenumber="1" language="arduino"><?dbhtml linenumbering.everyNth="1" linenumbering.separator=" " linenumbering.width="4"?><?dbfo linenumbering.everyNth="1" linenumbering.separator=" " linenumbering.width="4"?><textobject><textdata fileref="blink.ino" encoding="UTF-8" /></textobject></programlisting>
 
   </sect1>
 
