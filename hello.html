@@ -1,0 +1,159 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+      <title>测试 Docbook Line Numbering 和 Code Highlighting</title>
+      <link rel="stylesheet" type="text/css" href="docbook.css">
+      <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+   </head>
+   <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+      <div lang="zh_CN" class="article">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title"><a name="d0e1"></a>测试 Docbook Line Numbering 和 Code Highlighting
+                  </h2>
+               </div>
+            </div>
+            <hr>
+         </div>
+         <div class="toc">
+            <p><b>目录</b></p>
+            <dl class="toc">
+               <dt><span class="sect1"><a href="#d0e4">my_code.java</a></span></dt>
+               <dt><span class="sect1"><a href="#d0e12">hello.c</a></span></dt>
+               <dt><span class="sect1"><a href="#d0e21">blink.ino</a></span></dt>
+               <dt><span class="sect1"><a href="#d0e31">hello.c</a></span></dt>
+               <dt><span class="sect1"><a href="#d0e38">hello.py</a></span></dt>
+            </dl>
+         </div>
+         <div class="sect1">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both"><a name="d0e4"></a>my_code.java
+                     </h2>
+                  </div>
+               </div>
+            </div><pre class="programlisting"><strong class="hl-tag" style="color: blue">&nbsp;&nbsp;&nbsp;1 /**</strong>
+&nbsp;&nbsp;&nbsp;2 <strong class="hl-tag" style="color: blue"> * 使用「Adapter」Design Pattern </strong>
+&nbsp;&nbsp;&nbsp;3 <strong class="hl-tag" style="color: blue"> */</strong>
+&nbsp;&nbsp;&nbsp;4 <strong class="hl-keyword">abstract</strong> <strong class="hl-keyword">class</strong> HumanWorkerAdpater <strong class="hl-keyword">implements</strong> IWorker {
+&nbsp;&nbsp;&nbsp;5    <strong class="hl-keyword">public</strong> <strong class="hl-keyword">void</strong> work();
+&nbsp;&nbsp;&nbsp;6    <strong class="hl-keyword">public</strong> <strong class="hl-keyword">void</strong> eat();
+&nbsp;&nbsp;&nbsp;7 }
+&nbsp;&nbsp;&nbsp;8 <strong class="hl-keyword">abstract</strong> <strong class="hl-keyword">class</strong> RobotWorker <strong class="hl-keyword">implements</strong> IWorker {
+&nbsp;&nbsp;&nbsp;9    <strong class="hl-keyword">public</strong> <strong class="hl-keyword">void</strong> work();
+&nbsp;&nbsp;10 }
+&nbsp;&nbsp;11 IWoker HumanWorker = <strong class="hl-keyword">new</strong> HumanWorkerAdpater() {
+&nbsp;&nbsp;12    <strong class="hl-keyword">public</strong> work() {
+&nbsp;&nbsp;13       <em class="hl-comment" style="color: silver">// working....</em>
+&nbsp;&nbsp;14    }
+&nbsp;&nbsp;15    <strong class="hl-keyword">public</strong> eat() {
+&nbsp;&nbsp;16       <em class="hl-comment" style="color: silver">// eating....</em>
+&nbsp;&nbsp;17    }
+&nbsp;&nbsp;18 }
+&nbsp;&nbsp;19 IWoker RobotWorker = <strong class="hl-keyword">new</strong> RobotWorkerAdpater() {
+&nbsp;&nbsp;20    <strong class="hl-keyword">public</strong> work() {
+&nbsp;&nbsp;21       <em class="hl-comment" style="color: silver">// working....</em>
+&nbsp;&nbsp;22    }
+&nbsp;&nbsp;23 }
+&nbsp;&nbsp;24 </pre></div>
+         <div class="sect1">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both"><a name="d0e12"></a>hello.c
+                     </h2>
+                  </div>
+               </div>
+            </div>
+            <p>下面的例子测试直接在 docbook 文档中写源代码对行号的影响。</p><pre class="programlisting">&nbsp;&nbsp;&nbsp;1 
+&nbsp;&nbsp;&nbsp;2 
+&nbsp;&nbsp;&nbsp;3 <span class="hl-directive" style="color: maroon">#include &lt;stdio.h&gt;</span>
+&nbsp;&nbsp;&nbsp;4 
+&nbsp;&nbsp;&nbsp;5 <strong class="hl-keyword">int</strong> main(<strong class="hl-keyword">void</strong>)
+&nbsp;&nbsp;&nbsp;6 {
+&nbsp;&nbsp;&nbsp;7     printf(<strong class="hl-string"><em style="color:red">"hello, world\n"</em></strong>);
+&nbsp;&nbsp;&nbsp;8 }
+&nbsp;&nbsp;&nbsp;9 
+&nbsp;&nbsp;10 </pre></div>
+         <div class="sect1">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both"><a name="d0e21"></a>blink.ino
+                     </h2>
+                  </div>
+               </div>
+            </div>
+            <p>配色有些问题，比如注释的颜色偏暗，看不清楚。可以自己修改 xslthl.</p><pre class="programlisting"><em class="hl-comment" style="color: silver">&nbsp;&nbsp;&nbsp;1 /*</em>
+&nbsp;&nbsp;&nbsp;2 <em class="hl-comment" style="color: silver">  Blink</em>
+&nbsp;&nbsp;&nbsp;3 <em class="hl-comment" style="color: silver">  Turns on an LED on for one second, then off for one second, repeatedly.</em>
+&nbsp;&nbsp;&nbsp;4 <em class="hl-comment" style="color: silver"></em>
+&nbsp;&nbsp;&nbsp;5 <em class="hl-comment" style="color: silver">  Most Arduinos have an on-board LED you can control. On the Uno and</em>
+&nbsp;&nbsp;&nbsp;6 <em class="hl-comment" style="color: silver">  Leonardo, it is attached to digital pin 13. If you're unsure what</em>
+&nbsp;&nbsp;&nbsp;7 <em class="hl-comment" style="color: silver">  pin the on-board LED is connected to on your Arduino model, check</em>
+&nbsp;&nbsp;&nbsp;8 <em class="hl-comment" style="color: silver">  the documentation at http://arduino.cc</em>
+&nbsp;&nbsp;&nbsp;9 <em class="hl-comment" style="color: silver"></em>
+&nbsp;&nbsp;10 <em class="hl-comment" style="color: silver">  This example code is in the public domain.</em>
+&nbsp;&nbsp;11 <em class="hl-comment" style="color: silver"></em>
+&nbsp;&nbsp;12 <em class="hl-comment" style="color: silver">  modified 8 May 2014</em>
+&nbsp;&nbsp;13 <em class="hl-comment" style="color: silver">  by Scott Fitzgerald</em>
+&nbsp;&nbsp;14 <em class="hl-comment" style="color: silver"> */</em>
+&nbsp;&nbsp;15 
+&nbsp;&nbsp;16 
+&nbsp;&nbsp;17 <em class="hl-comment" style="color: silver">// the setup function runs once when you press reset or power the board</em>
+&nbsp;&nbsp;18 <strong class="hl-keyword">void</strong> setup() {
+&nbsp;&nbsp;19   <em class="hl-comment" style="color: silver">// initialize digital pin 13 as an output.</em>
+&nbsp;&nbsp;20   pinMode(<span class="hl-number">13</span>, OUTPUT);
+&nbsp;&nbsp;21 }
+&nbsp;&nbsp;22 
+&nbsp;&nbsp;23 <em class="hl-comment" style="color: silver">// the loop function runs over and over again forever</em>
+&nbsp;&nbsp;24 <strong class="hl-keyword">void</strong> loop() {
+&nbsp;&nbsp;25   digitalWrite(<span class="hl-number">13</span>, HIGH);   <em class="hl-comment" style="color: silver">// turn the LED on (HIGH is the voltage level)</em>
+&nbsp;&nbsp;26   delay(<span class="hl-number">1000</span>);              <em class="hl-comment" style="color: silver">// wait for a second</em>
+&nbsp;&nbsp;27   digitalWrite(<span class="hl-number">13</span>, LOW);    <em class="hl-comment" style="color: silver">// turn the LED off by making the voltage LOW</em>
+&nbsp;&nbsp;28   delay(<span class="hl-number">1000</span>);              <em class="hl-comment" style="color: silver">// wait for a second</em>
+&nbsp;&nbsp;29 }</pre></div>
+         <div class="sect1">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both"><a name="d0e31"></a>hello.c
+                     </h2>
+                  </div>
+               </div>
+            </div>
+            <p>下面的例子测试直接在 docbook 文档中写源代码对行号的影响。</p><pre class="programlisting">&nbsp;&nbsp;&nbsp;1 #include &lt;stdio.h&gt;
+&nbsp;&nbsp;&nbsp;2 
+&nbsp;&nbsp;&nbsp;3 <strong class="hl-keyword">int</strong> main(<strong class="hl-keyword">void</strong>)
+&nbsp;&nbsp;&nbsp;4 {
+&nbsp;&nbsp;&nbsp;5     printf(<strong class="hl-string"><em style="color:red">"hello, world\n"</em></strong>);
+&nbsp;&nbsp;&nbsp;6 }</pre></div>
+         <div class="sect1">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both"><a name="d0e38"></a>hello.py
+                     </h2>
+                  </div>
+               </div>
+            </div><pre class="programlisting"><em class="hl-comment" style="color: silver">&nbsp;&nbsp;&nbsp;1 #!/usr/bin/env python2</em>
+&nbsp;&nbsp;&nbsp;2 
+&nbsp;&nbsp;&nbsp;3 <strong class="hl-keyword">import</strong> sys
+&nbsp;&nbsp;&nbsp;4 
+&nbsp;&nbsp;&nbsp;5 <em class="hl-comment" style="color: silver">##Python is easy to learn</em>
+&nbsp;&nbsp;&nbsp;6 
+&nbsp;&nbsp;&nbsp;7 <strong class="hl-keyword">print</strong> <strong class="hl-string"><em style="color:red">"Jack and Jill went up a hill"</em></strong>
+&nbsp;&nbsp;&nbsp;8 <strong class="hl-keyword">print</strong> <strong class="hl-string"><em style="color:red">"to fetch a pail of water;"</em></strong>
+&nbsp;&nbsp;&nbsp;9 <strong class="hl-keyword">print</strong> <strong class="hl-string"><em style="color:red">"Jack fell down, and broke his crown,"</em></strong>
+&nbsp;&nbsp;10 <strong class="hl-keyword">print</strong> <strong class="hl-string"><em style="color:red">"and Jill came tumbling after."</em></strong>
+&nbsp;&nbsp;11 
+&nbsp;&nbsp;12 onetoten = range(<span class="hl-number">1</span>, <span class="hl-number">11</span>)
+&nbsp;&nbsp;13 <strong class="hl-keyword">for</strong> count <strong class="hl-keyword">in</strong> onetoten:
+&nbsp;&nbsp;14     <strong class="hl-keyword">print</strong> count
+&nbsp;&nbsp;15 </pre></div>
+      </div>
+   </body>
+</html>
