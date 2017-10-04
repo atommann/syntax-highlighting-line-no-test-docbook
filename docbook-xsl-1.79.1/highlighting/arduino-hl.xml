@@ -80,11 +80,9 @@ Michiel Hendriks <elmuerte at users.sourceforge.net>
 	<highlighter type="keywords">
 		<!-- C keywords -->
 		<keyword>auto</keyword>
-		<keyword>_Bool</keyword>
 		<keyword>break</keyword>
 		<keyword>case</keyword>
 		<keyword>char</keyword>
-		<keyword>_Complex</keyword>
 		<keyword>const</keyword>
 		<keyword>continue</keyword>
 		<keyword>default</keyword>
@@ -97,9 +95,7 @@ Michiel Hendriks <elmuerte at users.sourceforge.net>
 		<keyword>for</keyword>
 		<keyword>goto</keyword>
 		<keyword>if</keyword>
-		<keyword>_Imaginary</keyword>
 		<keyword>inline</keyword>
-		<keyword>int</keyword>
 		<keyword>long</keyword>
 		<keyword>register</keyword>
 		<keyword>restrict</keyword>
@@ -108,7 +104,6 @@ Michiel Hendriks <elmuerte at users.sourceforge.net>
 		<keyword>signed</keyword>
 		<keyword>sizeof</keyword>
 		<keyword>static</keyword>
-		<keyword>struct</keyword>
 		<keyword>switch</keyword>
 		<keyword>typedef</keyword>
 		<keyword>union</keyword>
@@ -118,34 +113,16 @@ Michiel Hendriks <elmuerte at users.sourceforge.net>
 		<keyword>while</keyword>
 		<!-- C++ keywords -->
 		<keyword>asm</keyword>
-		<keyword>dynamic_cast</keyword>
 		<keyword>namespace</keyword>
-		<keyword>reinterpret_cast</keyword>
 		<keyword>try</keyword>
-		<keyword>bool</keyword>
-		<keyword>explicit</keyword>
-		<keyword>new</keyword>
-		<keyword>static_cast</keyword>
 		<keyword>typeid</keyword>
 		<keyword>catch</keyword>
-		<keyword>false</keyword>
-		<keyword>operator</keyword>
 		<keyword>template</keyword>
 		<keyword>typename</keyword>
-		<keyword>class</keyword>
-		<keyword>friend</keyword>
-		<keyword>private</keyword>
 		<keyword>this</keyword>
 		<keyword>using</keyword>
-		<keyword>const_cast</keyword>
-		<keyword>inline</keyword>
-		<keyword>public</keyword>
 		<keyword>throw</keyword>
-		<keyword>virtual</keyword>
-		<keyword>delete</keyword>
 		<keyword>mutable</keyword>
-		<keyword>protected</keyword>
-		<keyword>true</keyword>
 		<keyword>wchar_t</keyword>
 		<!-- Arduino keywords -->
 		<keyword>digitalWrite</keyword>
@@ -154,12 +131,122 @@ Michiel Hendriks <elmuerte at users.sourceforge.net>
 		<keyword>setup</keyword>
 		<keyword>loop</keyword>
 		<keyword>delay</keyword>
-		<!-- Arduino constants -->
+
+        </highlighter>
+        <highlighter type="keywords">
+                <!-- # LITERAL1 specifies constants -->
+                <!--
+                     from https://github.com/arduino/Arduino/blob/master/build/shared/lib/keywords.txt
+                     I need a script to process the keywords.
+                -->
 		<keyword>HIGH</keyword>
 		<keyword>LOW</keyword>
 		<keyword>INPUT</keyword>
-		<keyword>OUTPUT</keyword>
 		<keyword>INPUT_PULLUP</keyword>
-		<keyword>LED_BUILTIN</keyword>
+		<keyword>OUTPUT</keyword>
+                <keyword>DEC</keyword>
+                <keyword>BIN</keyword>
+                <keyword>HEX</keyword>
+                <keyword>OCT</keyword>
+                <keyword>PI</keyword>
+                <keyword>HALF_PI</keyword>
+                <keyword>TWO_PI</keyword>
+                <keyword>LSBFIRST</keyword>
+                <keyword>MSBFIRST</keyword>
+                <keyword>CHANGE</keyword>
+                <keyword>FALLING</keyword>
+                <keyword>RISING</keyword>
+                <keyword>DEFAULT</keyword>
+                <keyword>EXTERNAL</keyword>
+                <keyword>INTERNAL</keyword>
+                <keyword>INTERNAL1V1</keyword>
+                <keyword>INTERNAL2V56</keyword>
+                <keyword>LED_BUILTIN</keyword>
+                <keyword>LED_BUILTIN_RX</keyword>
+                <keyword>LED_BUILTIN_TX</keyword>
+                <keyword>DIGITAL_MESSAGE</keyword>
+                <keyword>FIRMATA_STRING</keyword>
+                <keyword>ANALOG_MESSAGE</keyword>
+                <keyword>REPORT_DIGITAL</keyword>
+                <keyword>REPORT_ANALOG</keyword>
+                <keyword>SET_PIN_MODE</keyword>
+                <keyword>SYSTEM_RESET</keyword>
+                <keyword>SYSEX_START</keyword>
+
+                <keyword>auto</keyword>
+                <keyword>int8_t</keyword>
+		<keyword>int16_t</keyword>
+		<keyword>int32_t</keyword>
+		<keyword>int64_t</keyword>
+		<keyword>uint8_t</keyword>
+		<keyword>uint16_t</keyword>
+		<keyword>uint32_t</keyword>
+		<keyword>uint64_t</keyword>
+
+		<keyword>char16_t</keyword>
+		<keyword>char32_t</keyword>
+		<keyword>operator</keyword>
+		<keyword>enum</keyword>
+		<keyword>delete</keyword>
+                <keyword>bool</keyword>			 
+		<keyword>boolean</keyword>		 
+		<keyword>byte</keyword>			 
+		<keyword>char</keyword>			 
+		<keyword>const</keyword>		 
+		<keyword>false</keyword>		 
+		<keyword>float</keyword>		 
+		<keyword>double</keyword>		 
+		<keyword>null</keyword>			 
+		<keyword>NULL</keyword>			 
+		<keyword>int</keyword>			 
+		<keyword>long</keyword>			 
+		<keyword>new</keyword>			 
+		<keyword>private</keyword>		 
+		<keyword>protected</keyword>		 
+		<keyword>public</keyword>		 
+		<keyword>short</keyword>		 
+		<keyword>signed</keyword>		 
+		<keyword>static</keyword>		 
+		<keyword>volatile</keyword>		 
+		<keyword>String</keyword>		 
+		<keyword>void</keyword>			 
+		<keyword>true</keyword>			 
+		<keyword>unsigned</keyword>		 
+		<keyword>word</keyword>			 
+		<keyword>array</keyword>		 
+		<keyword>sizeof</keyword>		 
+		<keyword>dynamic_cast</keyword>		 
+		<keyword>typedef</keyword>		 
+		<keyword>const_cast</keyword>		 
+		<keyword>struct</keyword>		 
+		<keyword>static_cast</keyword>		 
+		<keyword>union</keyword>		 
+		<keyword>friend</keyword>		 
+		<keyword>extern</keyword>		 
+		<keyword>class</keyword>		 
+		<keyword>reinterpret_cast</keyword>	 
+		<keyword>register</keyword>		 
+		<keyword>explicit</keyword>		 
+		<keyword>inline</keyword>		 
+		<keyword>_Bool</keyword>		 
+		<keyword>complex</keyword>		 
+		<keyword>_Complex</keyword>		 
+		<keyword>_Imaginary</keyword>		 
+		<keyword>atomic_bool</keyword>		 
+		<keyword>atomic_char</keyword>		 
+		<keyword>atomic_schar</keyword>		 
+		<keyword>atomic_uchar</keyword>		 
+		<keyword>atomic_short</keyword>		 
+		<keyword>atomic_ushort</keyword>	 
+		<keyword>atomic_int</keyword>		 
+		<keyword>atomic_uint</keyword>		 
+		<keyword>atomic_long</keyword>		 
+		<keyword>atomic_ulong</keyword>		 
+		<keyword>atomic_llong</keyword>		 
+		<keyword>atomic_ullong</keyword>	 
+		<keyword>virtual</keyword>		 
+		<keyword>PROGMEM</keyword>               
+
+	        <style>number</style>
 	</highlighter>
 </highlighters>

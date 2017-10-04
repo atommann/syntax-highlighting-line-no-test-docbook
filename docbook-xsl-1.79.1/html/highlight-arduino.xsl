@@ -81,4 +81,14 @@
       <xsl:apply-templates mode="xslthl"/>
     </strong>
   </xsl:template>
+
+  <!-- Arduino macros -->
+  <!--
+  <xsl:template match="xslthl:macros" mode="xslthl">
+    <strong class="hl-macros" style="color: #0000ff">
+      <xsl:apply-templates mode="xslthl"/>
+    </strong>
+  </xsl:template>
+  -->
+
 </xsl:stylesheet>

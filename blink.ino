@@ -13,11 +13,12 @@
   by Scott Fitzgerald
  */
 
+const int LED = 13;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin 13 as an output.
-  pinMode(13, OUTPUT);
+  pinMode(LED, OUTPUT);
 }
 
 // the loop function runs over and over again forever

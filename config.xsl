@@ -42,11 +42,13 @@ Code Line Numbering & Highlighting Global Settings
     </em>
   </xsl:template>
 
+
   <xsl:template match="xslthl:keyword" mode="xslthl">
-    <strong class="hl-keyword" style="color: green">
+    <strong class="hl-keyword" style="color: red">
       <xsl:apply-templates mode="xslthl"/>
     </strong>
   </xsl:template>
+
 -->
 
 <xsl:param name="html.stylesheet" select="'docbook.css'"/>

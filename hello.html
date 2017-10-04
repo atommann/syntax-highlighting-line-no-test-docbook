@@ -102,20 +102,21 @@
 &nbsp;&nbsp;13 <em class="hl-comment" style="color: #008000">  by Scott Fitzgerald</em>
 &nbsp;&nbsp;14 <em class="hl-comment" style="color: #008000"> */</em>
 &nbsp;&nbsp;15 
-&nbsp;&nbsp;16 
-&nbsp;&nbsp;17 <em class="hl-comment" style="color: #008000">// the setup function runs once when you press reset or power the board</em>
-&nbsp;&nbsp;18 <strong class="hl-keyword" style="color: #000000">void</strong> <strong class="hl-keyword" style="color: #000000">setup</strong>() {
-&nbsp;&nbsp;19   <em class="hl-comment" style="color: #008000">// initialize digital pin 13 as an output.</em>
-&nbsp;&nbsp;20   <strong class="hl-keyword" style="color: #000000">pinMode</strong>(<span class="hl-number" style="color: #0000ff">13</span>, <strong class="hl-keyword" style="color: #000000">OUTPUT</strong>);
-&nbsp;&nbsp;21 }
-&nbsp;&nbsp;22 
-&nbsp;&nbsp;23 <em class="hl-comment" style="color: #008000">// the loop function runs over and over again forever</em>
-&nbsp;&nbsp;24 <strong class="hl-keyword" style="color: #000000">void</strong> <strong class="hl-keyword" style="color: #000000">loop</strong>() {
-&nbsp;&nbsp;25   <strong class="hl-keyword" style="color: #000000">digitalWrite</strong>(<span class="hl-number" style="color: #0000ff">13</span>, <strong class="hl-keyword" style="color: #000000">HIGH</strong>);   <em class="hl-comment" style="color: #008000">// turn the LED on (HIGH is the voltage level)</em>
-&nbsp;&nbsp;26   <strong class="hl-keyword" style="color: #000000">delay</strong>(<span class="hl-number" style="color: #0000ff">1000</span>);              <em class="hl-comment" style="color: #008000">// wait for a second</em>
-&nbsp;&nbsp;27   <strong class="hl-keyword" style="color: #000000">digitalWrite</strong>(<span class="hl-number" style="color: #0000ff">13</span>, <strong class="hl-keyword" style="color: #000000">LOW</strong>);    <em class="hl-comment" style="color: #008000">// turn the LED off by making the voltage LOW</em>
-&nbsp;&nbsp;28   <strong class="hl-keyword" style="color: #000000">delay</strong>(<span class="hl-number" style="color: #0000ff">1000</span>);              <em class="hl-comment" style="color: #008000">// wait for a second</em>
-&nbsp;&nbsp;29 }</pre></div>
+&nbsp;&nbsp;16 <strong class="hl-keyword" style="color: #000000">const</strong> <span class="hl-number" style="color: #0000ff">int</span> LED = <span class="hl-number" style="color: #0000ff">13</span>;
+&nbsp;&nbsp;17 
+&nbsp;&nbsp;18 <em class="hl-comment" style="color: #008000">// the setup function runs once when you press reset or power the board</em>
+&nbsp;&nbsp;19 <strong class="hl-keyword" style="color: #000000">void</strong> <strong class="hl-keyword" style="color: #000000">setup</strong>() {
+&nbsp;&nbsp;20   <em class="hl-comment" style="color: #008000">// initialize digital pin 13 as an output.</em>
+&nbsp;&nbsp;21   <strong class="hl-keyword" style="color: #000000">pinMode</strong>(LED, <span class="hl-number" style="color: #0000ff">OUTPUT</span>);
+&nbsp;&nbsp;22 }
+&nbsp;&nbsp;23 
+&nbsp;&nbsp;24 <em class="hl-comment" style="color: #008000">// the loop function runs over and over again forever</em>
+&nbsp;&nbsp;25 <strong class="hl-keyword" style="color: #000000">void</strong> <strong class="hl-keyword" style="color: #000000">loop</strong>() {
+&nbsp;&nbsp;26   <strong class="hl-keyword" style="color: #000000">digitalWrite</strong>(<span class="hl-number" style="color: #0000ff">13</span>, <span class="hl-number" style="color: #0000ff">HIGH</span>);   <em class="hl-comment" style="color: #008000">// turn the LED on (HIGH is the voltage level)</em>
+&nbsp;&nbsp;27   <strong class="hl-keyword" style="color: #000000">delay</strong>(<span class="hl-number" style="color: #0000ff">1000</span>);              <em class="hl-comment" style="color: #008000">// wait for a second</em>
+&nbsp;&nbsp;28   <strong class="hl-keyword" style="color: #000000">digitalWrite</strong>(<span class="hl-number" style="color: #0000ff">13</span>, <span class="hl-number" style="color: #0000ff">LOW</span>);    <em class="hl-comment" style="color: #008000">// turn the LED off by making the voltage LOW</em>
+&nbsp;&nbsp;29   <strong class="hl-keyword" style="color: #000000">delay</strong>(<span class="hl-number" style="color: #0000ff">1000</span>);              <em class="hl-comment" style="color: #008000">// wait for a second</em>
+&nbsp;&nbsp;30 }</pre></div>
          <div class="sect1">
             <div class="titlepage">
                <div>
