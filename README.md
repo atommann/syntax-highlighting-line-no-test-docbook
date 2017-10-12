@@ -14,6 +14,7 @@
 * 在 docbook-xsl-1.79.1/highlighting/xslthl-config.xml 中注册上面的文件。
 * 可以在 docbook-xsl-1.79.1/html/ 加一个自己的配置文件，如 highlight-arduino.xsl. 然后在 config.xsl 导入它。
 * 在 config.xsl 中也可以做一些修改。
+* 在 language-hl.xml 中可用正则表达式来匹配关键字。
 
 arduino-hl.xml 中对下面这些词作高亮处理。
 * multiline-comment
@@ -34,6 +35,8 @@ arduino-hl.xml 中对下面这些词作高亮处理。
 ## blog 记录
 
 在 blog 上写了一篇相关笔记，见 [在 Docbook 中给源代码加语法高亮](https://atommann-long.blogspot.jp/2017/10/docbook.html)
+
+另外，最近发现 [AsciiDoc](https://en.wikipedia.org/wiki/AsciiDoc) 是一个好的工具。
 
 ## Introduction
 
